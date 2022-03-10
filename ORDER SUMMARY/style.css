@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NODRAG AND NOSELECT */
+
+p,
+h1,
+span,
+img {
+    user-select: none;
+}
+
+img,
+a {
+    -webkit-user-drag: none;
+}
+
+/* CARD SECTION */
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 360px;
+    min-height: 680px;
+    margin: 0 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 0.9rem;
+}
+
+div.card img {
+    max-width: 100%;
+    border-radius: 0.9rem 0.9rem 0 0;
+}
+
+
+/* INFO SECTION (FIRST TWO) */
+
+div.informations {
+    padding: 3rem 0 3rem;
+}
+
+div.informations h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1.8rem;
+}
+
+div.informations p {
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.5rem;
+}
+
+/* PLAN SECTION (WITH ICON) */
+
+div.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.2rem 1rem;
+    border-radius: 0.9rem;
+    margin-bottom: 3rem;
+}
+
+div.plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+div.plan a:hover {
+    transform: translateY(-1px);
+}
+
+div.plan div.plan_middle_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.7rem;
+    padding-right: 15px;
+}
+
+.plan_middle_content span:first-child {
+    font-weight: bold;
+}
+
+/* ORDER SECTION (TWO BUTTONS) */
+
+div.order {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+}
+
+div.order a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 0.4rem 4rem;
+    min-width: 90%;
+    border-radius: 0.4rem;
+}
+
+div.order a:nth-child(1) {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 0.4rem;
+    margin-bottom: 1.3rem;
+    box-shadow: 0px 3px 15px rgba(5, 0, 0, 0.5);
+
+}
+
+div.order a:nth-child(2) {
+    color: hsl(225, 12%, 55%);
+}
+
+div.order a:hover {
+    transform: translateY(-1.5px);
+}
